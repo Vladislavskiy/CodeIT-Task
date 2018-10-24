@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="css/form.css">
+  </head>
+  <body>
+		<form class="form" action="http://codeit.pro/codeitCandidates/serverFrontendTest/user/registration" method="post" target="_self" novalidate>
+			<div class="headLine">
+				<h1 class="headLine__text">sign up</h1>
+			</div>
+			<div class="fieldsContainer">
+				<div class="fieldsContainer__row">
+          <div class="input__container">
+            <img src="img/person.svg" alt="person" width="27" height="28">
+            <input type="text" name="name" value="" placeholder="Username" title="Enter your name" minlength="3" maxlength="60" required>
+          </div>
+				</div>
+				<div class="fieldsContainer__row">
+          <div class="input__container">
+            <img src="img/person.svg" alt="person" width="27" height="28">
+            <input type="text" name="secondname" value="" placeholder="Secondname" title="Enter your secondname" minlength="3" maxlength="60" required>
+          </div>
+				</div>
+				<div class="fieldsContainer__row">
+          <div class="input__container">
+            <img class="icon" src="img/email.svg" alt="email" width="23" height="24">
+            <input type="email" name="email" value="" placeholder="Email" title="Enter your email" minlength="6" maxlength="30" required>
+          </div>
+				</div>
+				<div class="fieldsContainer__row">
+					<select class="gender" name="gender" title="Choose your gender" required>
+						<option value="male" selected>Male</option>
+						<option value="female">Female</option>
+					</select>
+				</div>
+				<div class="fieldsContainer__row">
+					<label>Conditions of Agreement:<input class="check" type="checkbox" name="agreement" value="" title="Agree with conditions" checked></label>
+				</div>
+				<div class="fieldsContainer__row">
+          <div class="input__container">
+            <img class="icon" src="img/key.svg" alt="key" width="23" height="24">
+            <input type="password" name="pass" value="" placeholder="Password" title="Enter your password" minlength="5" maxlength="15" required>
+          </div>
+				</div>
+			</div>
+			<input class="button" type="submit" name="submit" value="Send" title="submit">
+		</form>
+		<script src="js/jquery-3.3.1.js"></script>
+    <script src="js/form.js"></script>
+  </body>
+</html>

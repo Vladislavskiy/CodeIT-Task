@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding:0;
+}
+body {
+  width: 100%;
+  min-width: 320px;
+  height: 100%;
+  font-family: Arial;
+}
+form {
+  width: 95%;
+  max-width: 500px;
+  margin: 0 auto;
+  margin-top: 50px;
+  text-align: right;
+  border: 1px solid #dddddd;
+  border-radius: 3px;
+}
+.headLine {
+  text-align: center;
+  width: 100%;
+  background-color: #eeeeee;
+  height: 30px;
+  border-bottom: 1px solid #dddddd;
+}
+.headLine__text {
+  font-size: 20px;
+  text-transform: capitalize;
+  line-height: 30px;
+  font-weight: bold;
+}
+.fieldsContainer {
+  margin: 20px 10px 0 10px;
+  text-align: left;
+}
+.fieldsContainer__row > input, select {
+  width: 100%;
+  box-sizing: border-box;
+}
+.fieldsContainer__row {
+  width: 100%;
+  height: 65px;
+}
+.input__container {
+  display: flex;
+  height: 30px;
+  box-sizing: border-box;
+  width: 100%;
+  background-color: #eee;
+  border: 1px solid #dddddd;
+  border-radius: 3px;
+}
+[type="text"],
+[type="password"],
+[type="email"] {
+  height: 30px;
+  width: 100%;
+  box-sizing: border-box;
+  margin-top: -1px;
+  padding-left: 15px;
+  border-radius: 3px;
+  border: 1px solid #dddddd;
+  outline: none;
+}
+.icon {
+  margin: 2px;
+}
+.gender {
+  height: 30px;
+  width: 100%;
+  border-radius: 3px;
+  border: 1px solid #dddddd;
+  padding-left: 15px;
+  outline: none;
+  color: grey;
+  cursor: pointer;
+}
+.check {
+  margin-left: 10px;
+  cursor: pointer;
+}
+.button {
+  width: 100px;
+  height: 40px;
+  margin: 0 10px 20px 0;
+  border: 1px solid #dddddd;
+  background-color: #eee;
+  cursor: pointer;
+  outline: none;
+  transition: 0.5s;
+}
+.button:hover {
+  background-color: #ddd;
+  transition: 0.5s;
+}
+.error-message {
+  text-align: center;
+  color: red;
+  margin-top: 3px;
+  font-size: 12px;
+  font-style: italic;
+}

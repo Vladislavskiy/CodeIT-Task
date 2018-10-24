@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <title>Companies</title>
+    <link rel="stylesheet" href="css/companies.css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="block total">
+        <div class="block__title">
+          <h1>Total Companies</h1>
+        </div>
+        <div class="total__container">
+          <div class="countCircle">
+            <p class="countCircle__number"></p>
+          </div>
+        </div>
+      </div>
+      <div class="block names">
+        <div class="block__title">
+          <h1>List of Companies</h1>
+        </div>
+        <div class="names__container">
+          <ul class="list"></ul>
+        </div>
+      </div>
+      <div class="block location">
+        <div class="block__title">
+          <h1>Companies by Location</h1>
+        </div>
+        <div class="location__container">
+          <div class="location__pie">
+            <canvas id="myChart" width="280" height="280"></canvas>
+          </div>
+          <ul class="location__legend"></ul>
+        </div>
+      </div>
+      <div class="block news">
+        <div class="block__title">
+          <h1>News</h1>
+        </div>
+        <div class="news__container"></div>
+        <div class="news__radios"></div>
+      </div>
+    </div>
+    <script src="js/jquery-3.3.1.js"></script>
+    <script src="js/companies.js"></script>
+    <script src="js/Chart.min.js"></script>
+  </body>
+</html>
